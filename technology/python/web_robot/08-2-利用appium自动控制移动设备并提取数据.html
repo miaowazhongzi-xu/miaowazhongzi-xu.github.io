@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>08-2-利用appium自动控制移动设备并提取数据 | 超赞的博客</title>
+    <meta name="generator" content="VuePress 1.9.7">
+    <link rel="icon" href="/img/favicon.ico">
+    <link rel="stylesheet" href="/css/style.css">
+    <script charset="utf-8" src="/js/custom.js"></script>
+    <meta name="description" content="&lt;MyTypewriter/&gt;">
+    <meta name="keywords" content="vuepress,自建博客,超赞">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    <meta name="robots" content="all">
+    <meta name="author" content="超赞">
+    
+    <link rel="preload" href="/assets/css/0.styles.6883bceb.css" as="style"><link rel="preload" href="/assets/js/app.8c8f8633.js" as="script"><link rel="preload" href="/assets/js/8.08618cb1.js" as="script"><link rel="preload" href="/assets/js/1.abb8de29.js" as="script"><link rel="preload" href="/assets/js/35.d31f0c30.js" as="script"><link rel="preload" href="/assets/js/39.76dd4810.js" as="script"><link rel="prefetch" href="/assets/js/10.79c8bd35.js"><link rel="prefetch" href="/assets/js/11.c3fcf0d5.js"><link rel="prefetch" href="/assets/js/12.4c44f9ab.js"><link rel="prefetch" href="/assets/js/13.2d7efa26.js"><link rel="prefetch" href="/assets/js/14.a5f9e302.js"><link rel="prefetch" href="/assets/js/15.632a290d.js"><link rel="prefetch" href="/assets/js/16.242a87ec.js"><link rel="prefetch" href="/assets/js/17.135d3ff2.js"><link rel="prefetch" href="/assets/js/18.8d8754f9.js"><link rel="prefetch" href="/assets/js/19.164cf4e1.js"><link rel="prefetch" href="/assets/js/20.9a9bec92.js"><link rel="prefetch" href="/assets/js/21.d2c80073.js"><link rel="prefetch" href="/assets/js/22.0b874727.js"><link rel="prefetch" href="/assets/js/23.cac12e71.js"><link rel="prefetch" href="/assets/js/24.f7e63264.js"><link rel="prefetch" href="/assets/js/25.5d2e339e.js"><link rel="prefetch" href="/assets/js/26.51bf83bf.js"><link rel="prefetch" href="/assets/js/27.c4e922e3.js"><link rel="prefetch" href="/assets/js/28.75c7702e.js"><link rel="prefetch" href="/assets/js/29.efc59a99.js"><link rel="prefetch" href="/assets/js/30.7e9d4535.js"><link rel="prefetch" href="/assets/js/31.978a78d9.js"><link rel="prefetch" href="/assets/js/32.4f78b4e3.js"><link rel="prefetch" href="/assets/js/33.4b8c827d.js"><link rel="prefetch" href="/assets/js/34.3e1b8c0f.js"><link rel="prefetch" href="/assets/js/36.a6f83163.js"><link rel="prefetch" href="/assets/js/37.23945b23.js"><link rel="prefetch" href="/assets/js/38.0654ebe7.js"><link rel="prefetch" href="/assets/js/4.a89591d2.js"><link rel="prefetch" href="/assets/js/40.f59e52d6.js"><link rel="prefetch" href="/assets/js/41.1f63cace.js"><link rel="prefetch" href="/assets/js/42.ba755f2b.js"><link rel="prefetch" href="/assets/js/43.c7e587a0.js"><link rel="prefetch" href="/assets/js/44.5b27dbf3.js"><link rel="prefetch" href="/assets/js/45.ff17356a.js"><link rel="prefetch" href="/assets/js/46.c94971bd.js"><link rel="prefetch" href="/assets/js/47.e7b7dfad.js"><link rel="prefetch" href="/assets/js/48.5b8aded5.js"><link rel="prefetch" href="/assets/js/49.8e4b5252.js"><link rel="prefetch" href="/assets/js/5.aaa4560f.js"><link rel="prefetch" href="/assets/js/50.b085c8ab.js"><link rel="prefetch" href="/assets/js/51.1a0d5ae2.js"><link rel="prefetch" href="/assets/js/52.9e23352a.js"><link rel="prefetch" href="/assets/js/53.4f652b05.js"><link rel="prefetch" href="/assets/js/54.83e866f2.js"><link rel="prefetch" href="/assets/js/55.0ab340d4.js"><link rel="prefetch" href="/assets/js/56.1c821600.js"><link rel="prefetch" href="/assets/js/57.8945f537.js"><link rel="prefetch" href="/assets/js/58.7a7643b2.js"><link rel="prefetch" href="/assets/js/59.b931756f.js"><link rel="prefetch" href="/assets/js/6.3757addc.js"><link rel="prefetch" href="/assets/js/60.f815edc8.js"><link rel="prefetch" href="/assets/js/61.8ae83109.js"><link rel="prefetch" href="/assets/js/62.77eaf12b.js"><link rel="prefetch" href="/assets/js/63.744ec6cc.js"><link rel="prefetch" href="/assets/js/64.c23cc361.js"><link rel="prefetch" href="/assets/js/65.2df8ada8.js"><link rel="prefetch" href="/assets/js/66.291b7db2.js"><link rel="prefetch" href="/assets/js/67.6bb730bc.js"><link rel="prefetch" href="/assets/js/68.a569f9cd.js"><link rel="prefetch" href="/assets/js/69.7871a62a.js"><link rel="prefetch" href="/assets/js/7.e6be1190.js"><link rel="prefetch" href="/assets/js/70.7f933dbe.js"><link rel="prefetch" href="/assets/js/71.95ac03d0.js"><link rel="prefetch" href="/assets/js/72.f23dfca3.js"><link rel="prefetch" href="/assets/js/73.de1c2963.js"><link rel="prefetch" href="/assets/js/74.2dc857f8.js"><link rel="prefetch" href="/assets/js/75.c1c8dd1a.js"><link rel="prefetch" href="/assets/js/76.3929f422.js"><link rel="prefetch" href="/assets/js/77.72a2fd96.js"><link rel="prefetch" href="/assets/js/78.4d969c79.js"><link rel="prefetch" href="/assets/js/79.8d030a79.js"><link rel="prefetch" href="/assets/js/80.82b3b4f6.js"><link rel="prefetch" href="/assets/js/81.06a32cb0.js"><link rel="prefetch" href="/assets/js/82.0efce65a.js"><link rel="prefetch" href="/assets/js/83.44398db8.js"><link rel="prefetch" href="/assets/js/84.b314840c.js"><link rel="prefetch" href="/assets/js/9.e9d421eb.js"><link rel="prefetch" href="/assets/js/vendors~flowchart.44ce315c.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.6883bceb.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div><div class="theme-container" data-v-4698c43e><div data-v-4698c43e><div id="loader-wrapper" class="loading-wrapper" data-v-1c4f0192 data-v-4698c43e data-v-4698c43e><div class="loader-main" data-v-1c4f0192><div data-v-1c4f0192></div><div data-v-1c4f0192></div><div data-v-1c4f0192></div><div data-v-1c4f0192></div></div> <!----> <!----></div> <div class="password-shadow password-wrapper-out" style="display:none;" data-v-6cbeab0a data-v-4698c43e data-v-4698c43e><h3 class="title" style="display:none;" data-v-6cbeab0a data-v-6cbeab0a>超赞的博客</h3> <!----> <label id="box" class="inputBox" style="display:none;" data-v-6cbeab0a data-v-6cbeab0a><input type="password" value="" data-v-6cbeab0a> <span data-v-6cbeab0a>Konck! Knock!</span> <button data-v-6cbeab0a>OK</button></label> <div class="footer" style="display:none;" data-v-6cbeab0a data-v-6cbeab0a><span data-v-6cbeab0a><i class="iconfont reco-theme" data-v-6cbeab0a></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-6cbeab0a>vuePress-theme-reco</a></span> <span data-v-6cbeab0a><i class="iconfont reco-copyright" data-v-6cbeab0a></i> <a data-v-6cbeab0a><span data-v-6cbeab0a>超赞</span>
+            
+          <span data-v-6cbeab0a>2020 - </span>
+          2023
+        </a></span></div></div> <div class="hide" data-v-4698c43e><header class="navbar" data-v-4698c43e><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">超赞的博客</span></a> <div class="links"><div class="color-picker"><a class="color-button"><i class="iconfont reco-color"></i></a> <div class="color-picker-menu" style="display:none;"><div class="mode-options"><h4 class="title">Choose mode</h4> <ul class="color-mode-options"><li class="dark">dark</li><li class="auto active">auto</li><li class="light">light</li></ul></div></div></div> <div class="search-box"><i class="iconfont reco-search"></i> <input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/guide/" class="nav-link"><i class="iconfont reco-eye"></i>
+  本站指南
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-api"></i>
+      技术分享
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>python</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/technology/python/automation/python_foundation.html" class="nav-link"><i class="iconfont undefined"></i>
+  自动化
+</a></li><li class="dropdown-subitem"><a href="/technology/python/web_robot/" class="nav-link router-link-active"><i class="iconfont undefined"></i>
+  爬虫
+</a></li><li class="dropdown-subitem"><a href="/technology/python/autoLib/Automation_lib.html" class="nav-link"><i class="iconfont undefined"></i>
+  一些python库
+</a></li></ul></li><li class="dropdown-item"><h4>前端</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/technology/css/css1.html" class="nav-link"><i class="iconfont undefined"></i>
+  css
+</a></li><li class="dropdown-subitem"><a href="/technology/JavaScript/Design_patterns.html" class="nav-link"><i class="iconfont undefined"></i>
+  JS
+</a></li><li class="dropdown-subitem"><a href="/technology/JavaScript/JavaScript函数式编程.html" class="nav-link"><i class="iconfont undefined"></i>
+  JS函数编程
+</a></li><li class="dropdown-subitem"><a href="/technology/JS_Engineering/npm.html" class="nav-link"><i class="iconfont undefined"></i>
+  工程化
+</a></li></ul></li><li class="dropdown-item"><h4>数据集结构与算法</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/technology/algorithm/JS_Algorithms.html" class="nav-link"><i class="iconfont undefined"></i>
+  JavaScript数据集结构与算法
+</a></li></ul></li><li class="dropdown-item"><h4>git</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/technology/git/git_learn.html" class="nav-link"><i class="iconfont undefined"></i>
+  git学习
+</a></li><li class="dropdown-subitem"><a href="/technology/git/git常用命令.html" class="nav-link"><i class="iconfont undefined"></i>
+  git常用命令
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-faq"></i>
+      生活分享
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/生活分享/life.html" class="nav-link"><i class="iconfont undefined"></i>
+  生活分享
+</a></li></ul></div></div><div class="nav-item"><a href="/timeline/" class="nav-link"><i class="iconfont reco-date"></i>
+  时间轴
+</a></div> <!----></nav></div></header> <div class="sidebar-mask" data-v-4698c43e></div> <aside class="sidebar" data-v-4698c43e><div class="personal-info-wrapper" data-v-6c8ffc9c><img src="/avatar.png" alt="author-avatar" class="personal-img" data-v-6c8ffc9c> <h3 class="name" data-v-6c8ffc9c>
+    超赞
+  </h3> <div class="num" data-v-6c8ffc9c><div data-v-6c8ffc9c><h3 data-v-6c8ffc9c>63</h3> <h6 data-v-6c8ffc9c>文章</h6></div> <div data-v-6c8ffc9c><h3 data-v-6c8ffc9c>32</h3> <h6 data-v-6c8ffc9c>标签</h6></div></div> <hr data-v-6c8ffc9c></div> <nav class="nav-links"><div class="nav-item"><a href="/guide/" class="nav-link"><i class="iconfont reco-eye"></i>
+  本站指南
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-api"></i>
+      技术分享
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>python</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/technology/python/automation/python_foundation.html" class="nav-link"><i class="iconfont undefined"></i>
+  自动化
+</a></li><li class="dropdown-subitem"><a href="/technology/python/web_robot/" class="nav-link router-link-active"><i class="iconfont undefined"></i>
+  爬虫
+</a></li><li class="dropdown-subitem"><a href="/technology/python/autoLib/Automation_lib.html" class="nav-link"><i class="iconfont undefined"></i>
+  一些python库
+</a></li></ul></li><li class="dropdown-item"><h4>前端</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/technology/css/css1.html" class="nav-link"><i class="iconfont undefined"></i>
+  css
+</a></li><li class="dropdown-subitem"><a href="/technology/JavaScript/Design_patterns.html" class="nav-link"><i class="iconfont undefined"></i>
+  JS
+</a></li><li class="dropdown-subitem"><a href="/technology/JavaScript/JavaScript函数式编程.html" class="nav-link"><i class="iconfont undefined"></i>
+  JS函数编程
+</a></li><li class="dropdown-subitem"><a href="/technology/JS_Engineering/npm.html" class="nav-link"><i class="iconfont undefined"></i>
+  工程化
+</a></li></ul></li><li class="dropdown-item"><h4>数据集结构与算法</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/technology/algorithm/JS_Algorithms.html" class="nav-link"><i class="iconfont undefined"></i>
+  JavaScript数据集结构与算法
+</a></li></ul></li><li class="dropdown-item"><h4>git</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/technology/git/git_learn.html" class="nav-link"><i class="iconfont undefined"></i>
+  git学习
+</a></li><li class="dropdown-subitem"><a href="/technology/git/git常用命令.html" class="nav-link"><i class="iconfont undefined"></i>
+  git常用命令
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-faq"></i>
+      生活分享
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/生活分享/life.html" class="nav-link"><i class="iconfont undefined"></i>
+  生活分享
+</a></li></ul></div></div><div class="nav-item"><a href="/timeline/" class="nav-link"><i class="iconfont reco-date"></i>
+  时间轴
+</a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>web_robot</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/technology/python/web_robot/01-1-爬虫概述.html" class="sidebar-link">01-1-爬虫概述</a></li><li><a href="/technology/python/web_robot/01-2-http协议复习.html" class="sidebar-link">01-2-http协议复习</a></li><li><a href="/technology/python/web_robot/02-requests模块.html" class="sidebar-link">02-requests模块</a></li><li><a href="/technology/python/web_robot/03-1-数据提取概述.html" class="sidebar-link">03-1-数据提取概述</a></li><li><a href="/technology/python/web_robot/03-2-数据提取-jsonpath模块.html" class="sidebar-link">03-2-数据提取-jsonpath模块</a></li><li><a href="/technology/python/web_robot/03-3-数据提取-lxml模块.html" class="sidebar-link">03-3-数据提取-lxml模块</a></li><li><a href="/technology/python/web_robot/04-1-selenium的介绍.html" class="sidebar-link">04-1-selenium的介绍</a></li><li><a href="/technology/python/web_robot/04-2-selenium定位获取标签对象并提取数据.html" class="sidebar-link">04-2-selenium定位获取标签对象并提取数据</a></li><li><a href="/technology/python/web_robot/04-3-selenium的其它使用方法.html" class="sidebar-link">04-3-selenium的其它使用方法</a></li><li><a href="/technology/python/web_robot/05-1-常见的反爬手段和解决方法.html" class="sidebar-link">05-1-常见的反爬手段和解决方法</a></li><li><a href="/technology/python/web_robot/05-2-打码平台的使用.html" class="sidebar-link">05-2-打码平台的使用.md</a></li><li><a href="/technology/python/web_robot/05-3-chrome在爬虫中的使用.html" class="sidebar-link">05-3-chrome在爬虫中的使用</a></li><li><a href="/technology/python/web_robot/05-4-JS的解析.html" class="sidebar-link">05-4-JS的解析</a></li><li><a href="/technology/python/web_robot/06-1-mongodb介绍和安装.html" class="sidebar-link">06-1-mongodb介绍和安装</a></li><li><a href="/technology/python/web_robot/06-2-mongodb的简单使用.html" class="sidebar-link">06-2-mongodb的简单使用</a></li><li><a href="/technology/python/web_robot/06-3-mongodb的增删改查.html" class="sidebar-link">06-3-mongodb的增删改查</a></li><li><a href="/technology/python/web_robot/06-4-mongodb的聚合操作.html" class="sidebar-link">06-4-mongodb的聚合操作</a></li><li><a href="/technology/python/web_robot/06-5-mongodb的索引操作.html" class="sidebar-link">06-5-mongodb的索弓|操作</a></li><li><a href="/technology/python/web_robot/06-6-mongodb的权限管理.html" class="sidebar-link">06-6-mongodb的权限管理</a></li><li><a href="/technology/python/web_robot/06-7-mongodb和python交互.html" class="sidebar-link">06-7-mongodb和python交互</a></li><li><a href="/technology/python/web_robot/06-8-mongodb总结图.html" class="sidebar-link">06-8-mongodb总结图</a></li><li><a href="/technology/python/web_robot/07-1-scrapy的概念作用和工作流程.html" class="sidebar-link">07-1-scrapy的概念作用和工作流程</a></li><li><a href="/technology/python/web_robot/07-10-scrapy的日志信息与配置.html" class="sidebar-link">07-10-scrapy的日志信息与配置</a></li><li><a href="/technology/python/web_robot/07-11-scrapyd部署scrapy项目.html" class="sidebar-link">07-11-scrapyd部署scrapy项目</a></li><li><a href="/technology/python/web_robot/07-12-gerapy爬虫管理.html" class="sidebar-link">07-12-gerapy爬虫管理</a></li><li><a href="/technology/python/web_robot/07-13-scrapy总结图.html" class="sidebar-link">07-13-scrapy总结图</a></li><li><a href="/technology/python/web_robot/07-14-crawlspider类的使用.html" class="sidebar-link">07-14-crawlspider类的使用</a></li><li><a href="/technology/python/web_robot/07-2-scrapy的入门使用.html" class="sidebar-link">07-2-scrapy的入门使用</a></li><li><a href="/technology/python/web_robot/07-3-scrapy构造并发送请求.html" class="sidebar-link">07-3-scrapy构造并发送请求</a></li><li><a href="/technology/python/web_robot/07-4-scrapy模拟登陆.html" class="sidebar-link">07-4-scrapy模拟登陆</a></li><li><a href="/technology/python/web_robot/07-5-scrapy管道的使用.html" class="sidebar-link">07-5-scrapy管道的使用</a></li><li><a href="/technology/python/web_robot/07-6-scrapy中间件的使用.html" class="sidebar-link">07-6-scrapy中间件的使用</a></li><li><a href="/technology/python/web_robot/07-7-scrapy_redis概念作用和流程.html" class="sidebar-link">07-7-scrapy_redis概念作用和流程</a></li><li><a href="/technology/python/web_robot/07-8-scrapy_redis原理分析并实现断点续爬以及分布式爬虫.html" class="sidebar-link">07-8-scrapy_redis原理分析并实现断点续爬以及分布式爬虫</a></li><li><a href="/technology/python/web_robot/07-9-scrapy_splash组件的使用.html" class="sidebar-link">07-9-scrapy_splash组件的使用</a></li><li><a href="/technology/python/web_robot/08-1-appium环境安装.html" class="sidebar-link">08-1-appium环境安装</a></li><li><a href="/technology/python/web_robot/08-2-利用appium自动控制移动设备并提取数据.html" class="active sidebar-link">08-2-利用appium自动控制移动设备并提取数据</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/technology/python/web_robot/08-2-利用appium自动控制移动设备并提取数据.html#利用appium自动控制移动设备并提取数据" class="sidebar-link">利用appium自动控制移动设备并提取数据</a></li></ul></li><li><a href="/technology/python/web_robot/09-1-12306购票抓包分析以及任务分解.html" class="sidebar-link">09-1-12306购票抓包分析以及任务分解</a></li><li><a href="/technology/python/web_robot/09-2-处理验证码并完成登陆.html" class="sidebar-link">09-2-处理验证码并完成登陆</a></li><li><a href="/technology/python/web_robot/09-3-解析车站信息以及车辆信息.html" class="sidebar-link">09-3-解析车站信息以及车辆信息</a></li><li><a href="/technology/python/web_robot/09-4-预定订单初始化、解析用户信息以及坐席信息.html" class="sidebar-link">09-4-预定订单初始化、解析用户信息以及坐席信息</a></li><li><a href="/technology/python/web_robot/09-5-构造时间参数以及下单购票.html" class="sidebar-link">09-5-构造时间参数以及下单购票</a></li><li><a href="/technology/python/web_robot/09-6-测试运行以及完整代码.html" class="sidebar-link">09-6-测试运行以及完整代码</a></li><li><a href="/technology/python/web_robot/10-1-项目分析.html" class="sidebar-link">10-1-项目分析</a></li><li><a href="/technology/python/web_robot/10-2-webapi实现.html" class="sidebar-link">10-2-webapi实现</a></li><li><a href="/technology/python/web_robot/10-3-node_server节点任务调度.html" class="sidebar-link">10-3-node_server节点任务调度</a></li><li><a href="/technology/python/web_robot/10-4-crawler爬虫抓取数据.html" class="sidebar-link">10-4-crawler爬虫抓取数据</a></li><li><a href="/technology/python/web_robot/10-5-运行效果.html" class="sidebar-link">10-5-运行效果</a></li><li><a href="/technology/python/web_robot/" aria-current="page" class="sidebar-link">爬虫课程概要</a></li><li><a href="/technology/python/web_robot/Regex.html" class="sidebar-link">正则表达式</a></li><li><a href="/technology/python/web_robot/XPathTutorial.html" class="sidebar-link">XPath的使用</a></li></ul></section></li></ul> </aside> <div class="password-shadow password-wrapper-in" style="display:none;" data-v-6cbeab0a data-v-4698c43e><h3 class="title" style="display:none;" data-v-6cbeab0a data-v-6cbeab0a>08-2-利用appium自动控制移动设备并提取数据</h3> <!----> <label id="box" class="inputBox" style="display:none;" data-v-6cbeab0a data-v-6cbeab0a><input type="password" value="" data-v-6cbeab0a> <span data-v-6cbeab0a>Konck! Knock!</span> <button data-v-6cbeab0a>OK</button></label> <div class="footer" style="display:none;" data-v-6cbeab0a data-v-6cbeab0a><span data-v-6cbeab0a><i class="iconfont reco-theme" data-v-6cbeab0a></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-6cbeab0a>vuePress-theme-reco</a></span> <span data-v-6cbeab0a><i class="iconfont reco-copyright" data-v-6cbeab0a></i> <a data-v-6cbeab0a><span data-v-6cbeab0a>超赞</span>
+            
+          <span data-v-6cbeab0a>2020 - </span>
+          2023
+        </a></span></div></div> <div data-v-4698c43e><main class="page"><!----> <div class="page-title" style="display:none;"><h1>08-2-利用appium自动控制移动设备并提取数据</h1> <hr> <div data-v-484a899e><i class="iconfont reco-account" data-v-484a899e><span data-v-484a899e>超赞</span></i> <i class="iconfont reco-date" data-v-484a899e><span data-v-484a899e>2020-12-25 11:10:09</span></i> <!----> <i class="iconfont reco-tag tags" data-v-484a899e><span class="tag-item" data-v-484a899e>
+      python
+    </span><span class="tag-item" data-v-484a899e>
+      appium
+    </span></i></div></div> <div class="theme-reco-content content__default" style="display:none;"><h2 id="利用appium自动控制移动设备并提取数据"><a href="#利用appium自动控制移动设备并提取数据" class="header-anchor">#</a> 利用appium自动控制移动设备并提取数据</h2> <h5 id="学习目标"><a href="#学习目标" class="header-anchor">#</a> 学习目标</h5> <ol><li>了解 appium-python-client模块定位元素以及提取其文本内容的方法</li> <li>了解 appium-python-client模块控制滑动动作的方法</li></ol> <hr> <blockquote><p>以控制抖音app滑动并获取抖音短视频发布者昵称和点赞数等信息为例</p></blockquote> <h3 id="_2-1-安装appium-python-client模块并启动已安装好的环境"><a href="#_2-1-安装appium-python-client模块并启动已安装好的环境" class="header-anchor">#</a> 2.1 安装appium-python-client模块并启动已安装好的环境</h3> <h4 id="_2-1-1-安装appium-python-client模块"><a href="#_2-1-1-安装appium-python-client模块" class="header-anchor">#</a> 2.1.1 安装appium-python-client模块</h4> <p>在window的虚拟环境下执行<code>pip install appium-python-client</code></p> <h4 id="_2-1-2-启动夜神模拟器-进入夜神模拟器所在的安装路径的bin目录下-进入cmd终端-使用adb命令建立adb-server和模拟器的连接"><a href="#_2-1-2-启动夜神模拟器-进入夜神模拟器所在的安装路径的bin目录下-进入cmd终端-使用adb命令建立adb-server和模拟器的连接" class="header-anchor">#</a> 2.1.2 启动夜神模拟器，进入夜神模拟器所在的安装路径的bin目录下，进入cmd终端，使用adb命令建立adb server和模拟器的连接</h4> <ol><li><code>adb devices</code></li></ol> <div class="language- line-numbers-mode"><pre class="language-text"><code>C:\Program Files (x86)\Nox\bin&gt;adb devices
+List of devices attached
+* daemon not running; starting now at tcp:5037
+* daemon started successfully
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><ol start="2"><li><code>nox_adb.exe connect 127.0.0.1:62001</code></li></ol> <div class="language- line-numbers-mode"><pre class="language-text"><code>C:\Program Files (x86)\Nox\bin&gt;nox_adb.exe connect 127.0.0.1:62001
+already connected to 127.0.0.1:62001
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><ol start="3"><li><code>adb devices</code></li></ol> <div class="language- line-numbers-mode"><pre class="language-text"><code>C:\Program Files (x86)\Nox\bin&gt;adb devices
+List of devices attached
+127.0.0.1:62001 device
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><h4 id="_2-1-3-启动appium-desktop-点击start-server启动appium服务"><a href="#_2-1-3-启动appium-desktop-点击start-server启动appium服务" class="header-anchor">#</a> 2.1.3 启动appium-desktop，点击start server启动appium服务</h4> <div class="language- line-numbers-mode"><pre class="language-text"><code>[Appium] Welcome to Appium v1.10.0
+[Appium] Appium REST http interface listener started on 0.0.0.0:4723
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><h4 id="_2-1-4-利用上一小节所学习的内容获取desired-capabilities参数"><a href="#_2-1-4-利用上一小节所学习的内容获取desired-capabilities参数" class="header-anchor">#</a> 2.1.4 利用上一小节所学习的内容获取Desired Capabilities参数</h4> <ol><li>获取模拟设备的型号
+<ul><li>打开设置——关于平板电脑</li> <li>查看型号，获取模拟设备的型号</li></ul></li> <li>获取app包名称 以及 app进程名
+<ul><li>打开模拟器中的抖音短视频app</li> <li>在adb连接正确的情况下，在夜神模拟器安装目录的bin目录下的cmd中输入<code>adb shell</code></li> <li>进入adb shell后输入 <code>dumpsys activity | grep mFocusedActivity</code></li> <li>``com.ss.android.ugc.aweme`就是app包名</li> <li><code>.main.MainActivity</code>就是进程名 注意前边有个点.</li></ul></li></ol> <h3 id="_2-2-初始化以及获取移动设备分辨率"><a href="#_2-2-初始化以及获取移动设备分辨率" class="header-anchor">#</a> 2.2 初始化以及获取移动设备分辨率</h3> <blockquote><p>完成代码如下，并运行代码查看效果：如果模拟器中抖音app被启动，并打印出模拟设备的分辨率则成功</p></blockquote> <div class="language-python line-numbers-mode"><pre class="language-python"><code><span class="token keyword">from</span> appium <span class="token keyword">import</span> webdriver
+
+<span class="token comment"># 初始化配置，设置Desired Capabilities参数</span>
+desired_caps <span class="token operator">=</span> <span class="token punctuation">{</span>
+    <span class="token string">'platformName'</span><span class="token punctuation">:</span> <span class="token string">'Android'</span><span class="token punctuation">,</span>
+    <span class="token string">'deviceName'</span><span class="token punctuation">:</span> <span class="token string">'SM-G955F'</span><span class="token punctuation">,</span>
+    <span class="token string">'appPackage'</span><span class="token punctuation">:</span> <span class="token string">'com.ss.android.ugc.aweme'</span><span class="token punctuation">,</span>
+    <span class="token string">'appActivity'</span><span class="token punctuation">:</span> <span class="token string">'.main.MainActivity'</span>
+<span class="token punctuation">}</span>
+<span class="token comment"># 指定Appium Server</span>
+server <span class="token operator">=</span> <span class="token string">'http://localhost:4723/wd/hub'</span>
+<span class="token comment"># 新建一个driver</span>
+driver <span class="token operator">=</span> webdriver<span class="token punctuation">.</span>Remote<span class="token punctuation">(</span>server<span class="token punctuation">,</span> desired_caps<span class="token punctuation">)</span>
+<span class="token comment"># 获取模拟器/手机的分辨率(px)</span>
+width <span class="token operator">=</span> driver<span class="token punctuation">.</span>get_window_size<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">[</span><span class="token string">'width'</span><span class="token punctuation">]</span>
+height <span class="token operator">=</span> driver<span class="token punctuation">.</span>get_window_size<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">[</span><span class="token string">'height'</span><span class="token punctuation">]</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>width<span class="token punctuation">,</span> height<span class="token punctuation">)</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br></div></div><ul><li><p>移动设备分辨率</p> <ul><li><p>driver.get_window_size()['width']</p></li> <li><p>driver.get_window_size()['height']</p></li></ul></li></ul> <h3 id="_2-3-定位元素以及提取文本的方法"><a href="#_2-3-定位元素以及提取文本的方法" class="header-anchor">#</a> 2.3 定位元素以及提取文本的方法</h3> <h4 id="_2-3-1-点击appium-desktop右上角的放大镜图标"><a href="#_2-3-1-点击appium-desktop右上角的放大镜图标" class="header-anchor">#</a> 2.3.1 点击appium desktop右上角的放大镜图标</h4> <blockquote><p>如图填写配置，并点击start session</p></blockquote> <p><img src="/assets/img/appium-session.16a15a16.png" alt="appium-session配置"></p> <h4 id="_2-3-2-定位界面的使用方法如下图所示"><a href="#_2-3-2-定位界面的使用方法如下图所示" class="header-anchor">#</a> 2.3.2 定位界面的使用方法如下图所示</h4> <p><img src="/assets/img/2-3-2-appiumDesktop.49051417.jpg" alt="2-3-2-appiumDesktop定位界面使用方法"></p> <h4 id="_2-3-3-点击短视频的作者名字-查看并获取该元素的id"><a href="#_2-3-3-点击短视频的作者名字-查看并获取该元素的id" class="header-anchor">#</a> 2.3.3 点击短视频的作者名字，查看并获取该元素的id</h4> <p><img src="/assets/img/el.7018ea01.png" alt="元素定位"></p> <h4 id="_2-3-4-在python使用代码通过元素id获取该元素的文本内容"><a href="#_2-3-4-在python使用代码通过元素id获取该元素的文本内容" class="header-anchor">#</a> 2.3.4 在python使用代码通过元素id获取该元素的文本内容</h4> <blockquote><p>实例化appium driver对象后添加如下代码，运行并查看效果</p></blockquote> <div class="language- line-numbers-mode"><pre class="language-text"><code># 获取视频的各种信息：使用appium desktop定位元素
+print(driver.find_element_by_id('bc').text)  # 发布者名字
+print(driver.find_element_by_id('al9').text)  # 点赞数
+print(driver.find_element_by_id('al_').text)  # 留言数
+print(driver.find_element_by_id('a23').text)  # 视频名字，可能不存在，报错
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><ul><li><p>定位元素及获取其文本内容的方法</p> <ul><li>driver.find_element_by_id(元素的id).text</li> <li>driver.find_element_by_xpath(定位元素的xpath规则).text</li></ul></li></ul> <h3 id="_2-4-控制抖音app滑动"><a href="#_2-4-控制抖音app滑动" class="header-anchor">#</a> 2.4 控制抖音app滑动</h3> <h4 id="_2-4-1-appium滑动的函数"><a href="#_2-4-1-appium滑动的函数" class="header-anchor">#</a> 2.4.1 appium滑动的函数</h4> <blockquote><p>从(start_x, start_y)滑动到(end_x, end_y)</p></blockquote> <ul><li>driver.swipe(start_x, start_y, end_x, end_y)</li></ul> <h4 id="_2-4-2-控制抖音app滑动的代码实现"><a href="#_2-4-2-控制抖音app滑动的代码实现" class="header-anchor">#</a> 2.4.2  控制抖音app滑动的代码实现</h4> <div class="language- line-numbers-mode"><pre class="language-text"><code>start_x = width // 2  # 滑动的起始点的x坐标，屏幕宽度中心点
+start_y = height // 3 * 2  # 滑动的起始点的y坐标，屏幕高度从上开始到下三分之二处
+distance = height // 2  # y轴滑动距离：屏幕高度一半的距离
+end_x = start_x # 滑动的终点的x坐标
+end_y = start_y-distance # 滑动的终点的y坐标
+# 滑动
+driver.swipe(start_x, start_y, end_x, end_y)
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br></div></div><h3 id="_2-5-整理并完成自动滑动的代码"><a href="#_2-5-整理并完成自动滑动的代码" class="header-anchor">#</a> 2.5 整理并完成自动滑动的代码</h3> <div class="language- line-numbers-mode"><pre class="language-text"><code>import time
+from appium import webdriver
+
+
+class DouyinAction():
+    &quot;&quot;&quot;自动滑动，并获取抖音短视频发布者的id&quot;&quot;&quot;
+    def __init__(self, nums:int=None):
+        # 初始化配置，设置Desired Capabilities参数
+        self.desired_caps = {
+            'platformName': 'Android',
+            'deviceName': 'SM-G955F',
+            'appPackage': 'com.ss.android.ugc.aweme',
+            'appActivity': '.main.MainActivity'
+        }
+        # 指定Appium Server
+        self.server = 'http://localhost:4723/wd/hub'
+        # 新建一个driver
+        self.driver = webdriver.Remote(self.server, self.desired_caps)
+        # 获取模拟器/手机的分辨率(px)
+        width = self.driver.get_window_size()['width']
+        height = self.driver.get_window_size()['height']
+        print(width, height)
+        # 设置滑动初始坐标和滑动距离
+        self.start_x = width//2 # 屏幕宽度中心点
+        self.start_y = height//3*2 # 屏幕高度从上开始到下三分之二处
+        self.distance = height//2 # 滑动距离：屏幕高度一半的距离
+        # 设置滑动次数
+        self.nums = nums
+
+    def comments(self):
+        # app开启之后点击一次屏幕，确保页面的展示
+        time.sleep(2)
+        self.driver.tap([(500, 1200)], 500)
+
+    def scroll(self):
+        # 无限滑动
+        i = 0
+        while True:
+            # 模拟滑动
+            print('滑动ing...')
+            self.driver.swipe(self.start_x, self.start_y,
+                              self.start_x, self.start_y-self.distance)
+            time.sleep(1)
+            self.get_infos() # 获取视频发布者的名字
+            # 设置延时等待
+            time.sleep(4)
+            # 判断是否退出
+            if self.nums is not None and self.nums == i:
+                break
+            i += 1
+
+    def get_infos(self):
+        # 获取视频的各种信息：使用appium desktop定位元素
+        print(self.driver.find_element_by_id('bc').text) # 发布者名字
+        print(self.driver.find_element_by_id('al9').text) # 点赞数
+        print(self.driver.find_element_by_id('al_').text) # 留言数
+        print(self.driver.find_element_by_id('a23').text) # 视频名字，可能不存在，报错
+
+        # # 点击【分享】坐标位置 671,1058
+        # self.driver.tap([(671, 1058)])
+        # time.sleep(2)
+        # # 向左滑动露出 【复制链接】 580，1100 --&gt; 200, 1100
+        # self.driver.swipe(580,1100, 20, 200, 1100)
+        # # self.driver.get_screenshot_as_file('./a.png') # 截图
+        # # 点击【复制链接】 距离右边60 距离底边170 720-60，1280-170
+        # self.driver.tap([(660, 1110)])
+        # # self.driver.get_screenshot_as_file('./b.png')  # 截图
+
+    def main(self):
+        self.comments() # 点击一次屏幕，确保页面的展示
+        time.sleep(2)
+        self.scroll() # 滑动
+
+
+if __name__ == '__main__':
+
+    action = DouyinAction(nums=5)
+    action.main()
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br><span class="line-number">50</span><br><span class="line-number">51</span><br><span class="line-number">52</span><br><span class="line-number">53</span><br><span class="line-number">54</span><br><span class="line-number">55</span><br><span class="line-number">56</span><br><span class="line-number">57</span><br><span class="line-number">58</span><br><span class="line-number">59</span><br><span class="line-number">60</span><br><span class="line-number">61</span><br><span class="line-number">62</span><br><span class="line-number">63</span><br><span class="line-number">64</span><br><span class="line-number">65</span><br><span class="line-number">66</span><br><span class="line-number">67</span><br><span class="line-number">68</span><br><span class="line-number">69</span><br><span class="line-number">70</span><br><span class="line-number">71</span><br><span class="line-number">72</span><br><span class="line-number">73</span><br><span class="line-number">74</span><br><span class="line-number">75</span><br><span class="line-number">76</span><br><span class="line-number">77</span><br><span class="line-number">78</span><br></div></div><blockquote><p>至此，可以参考爬虫5.0课程项目库，使用fiddler等抓包工具，利用appium+mitmproxy+wget等python模块自动获取抖音视频文件</p></blockquote> <h3 id="_2-6-关于模拟式移动端爬虫的参考阅读"><a href="#_2-6-关于模拟式移动端爬虫的参考阅读" class="header-anchor">#</a> 2.6 关于模拟式移动端爬虫的参考阅读</h3> <ol><li><p>https://zhuanlan.zhihu.com/appium  # 你们猜这是谁写的，不服你们也写，以后课件就用咱们班同学的！</p></li> <li><p>https://github.com/butomo1989/docker-android</p></li> <li><p>https://blog.csdn.net/weixin_42620645/article/details/83828863</p></li> <li><p>https://blog.csdn.net/weixin_39211232/article/details/83410130#Android_16</p></li> <li><p>https://www.jianshu.com/p/bf1ca3d4ac76</p></li> <li><p>http://www.testclass.net/appium/</p></li></ol> <hr> <h5 id="小结"><a href="#小结" class="header-anchor">#</a> 小结</h5> <ol><li>了解 appium-python-client模块定位元素以及提取其文本内容的方法</li> <li>了解 appium-python-client模块控制滑动动作的方法</li></ol></div> <footer class="page-edit" style="display:none;"><!----> <div class="last-updated"><span class="prefix">2021-04-07: </span> <span class="time">10/30/2023, 5:14:04 PM</span></div></footer> <!----> <!----></main> <!----> <div class="comments-wrapper" data-v-4698c43e><!----></div></div></div></div></div></div><div class="global-ui"><div class="back-to-ceiling" style="right:1rem;bottom:6rem;width:2.5rem;height:2.5rem;border-radius:.25rem;line-height:2.5rem;display:none;" data-v-44bd5a18 data-v-44bd5a18><svg t="1574745035067" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="5404" class="icon" data-v-44bd5a18><path d="M526.60727968 10.90185116a27.675 27.675 0 0 0-29.21455937 0c-131.36607665 82.28402758-218.69155461 228.01873535-218.69155402 394.07834331a462.20625001 462.20625001 0 0 0 5.36959153 69.94390903c1.00431239 6.55289093-0.34802892 13.13561351-3.76865779 18.80351572-32.63518765 54.11355614-51.75690182 118.55860487-51.7569018 187.94566865a371.06718723 371.06718723 0 0 0 11.50484808 91.98906777c6.53300375 25.50556257 41.68394495 28.14064038 52.69160883 4.22606766 17.37162448-37.73630017 42.14135425-72.50938081 72.80769204-103.21549295 2.18761121 3.04276886 4.15646224 6.24463696 6.40373557 9.22774369a1871.4375 1871.4375 0 0 0 140.04691725 5.34970492 1866.36093723 1866.36093723 0 0 0 140.04691723-5.34970492c2.24727335-2.98310674 4.21612437-6.18497483 6.3937923-9.2178004 30.66633723 30.70611158 55.4360664 65.4791928 72.80769147 103.21549355 11.00766384 23.91457269 46.15860503 21.27949489 52.69160879-4.22606768a371.15156223 371.15156223 0 0 0 11.514792-91.99901164c0-69.36717486-19.13165746-133.82216804-51.75690182-187.92578088-3.42062944-5.66790279-4.76302748-12.26056868-3.76865837-18.80351632a462.20625001 462.20625001 0 0 0 5.36959269-69.943909c-0.00994388-166.08943902-87.32547796-311.81420293-218.6915546-394.09823051zM605.93803103 357.87693858a93.93749974 93.93749974 0 1 1-187.89594924 6.1e-7 93.93749974 93.93749974 0 0 1 187.89594924-6.1e-7z" p-id="5405" data-v-44bd5a18></path><path d="M429.50777625 765.63860547C429.50777625 803.39355007 466.44236686 1000.39046097 512.00932183 1000.39046097c45.56695499 0 82.4922232-197.00623328 82.5015456-234.7518555 0-37.75494459-36.9345906-68.35043303-82.4922232-68.34111062-45.57627738-0.00932239-82.52019037 30.59548842-82.51086798 68.34111062z" p-id="5406" data-v-44bd5a18></path></svg></div><!----><div></div><!----><div class="reco-bgm-panel" data-v-b1d3339e><audio id="bgm" src="https://music.163.com/song/media/outer/url?id=165356.mp3" data-v-b1d3339e></audio> <div class="reco-float-box" style="bottom:200px;z-index:999999;display:none;" data-v-b1d3339e data-v-41bcba48 data-v-b1d3339e><img src="http://p2.music.126.net/XX2gJnI5lGQIxQT0Wz9NAg==/94558000000902.jpg" data-v-b1d3339e></div> <div class="reco-bgm-box" style="left:10px;bottom:10px;z-index:999999;" data-v-b1d3339e data-v-41bcba48 data-v-b1d3339e><div class="reco-bgm-cover" style="background-image:url(http://p2.music.126.net/XX2gJnI5lGQIxQT0Wz9NAg==/94558000000902.jpg);" data-v-b1d3339e><div class="mini-operation" style="display:none;" data-v-b1d3339e><i class="reco-bgm reco-bgm-pause" style="display:none;" data-v-b1d3339e></i> <i class="reco-bgm reco-bgm-play" style="display:none;" data-v-b1d3339e></i></div> <div class="falut-message" style="display:none;" data-v-b1d3339e>
+          播放失败
+        </div></div> <div class="reco-bgm-info" data-v-b1d3339e data-v-41bcba48 data-v-b1d3339e><div class="info-box" data-v-b1d3339e><i class="reco-bgm reco-bgm-music music" data-v-b1d3339e></i>不要怕 (彝语)</div> <div class="info-box" data-v-b1d3339e><i class="reco-bgm reco-bgm-artist" data-v-b1d3339e></i>瓦其依合</div> <div class="reco-bgm-progress" data-v-b1d3339e><div class="progress-bar" data-v-b1d3339e><div class="bar" data-v-b1d3339e></div></div></div> <div class="reco-bgm-operation" data-v-b1d3339e><i class="reco-bgm reco-bgm-last last" data-v-b1d3339e></i> <i class="reco-bgm reco-bgm-pause pause" style="display:none;" data-v-b1d3339e></i> <i class="reco-bgm reco-bgm-play play" data-v-b1d3339e></i> <i class="reco-bgm reco-bgm-next next" data-v-b1d3339e></i> <i class="reco-bgm reco-bgm-volume1 volume" data-v-b1d3339e></i> <i class="reco-bgm reco-bgm-mute mute" style="display:none;" data-v-b1d3339e></i> <div class="volume-bar" data-v-b1d3339e><div class="bar" data-v-b1d3339e></div></div></div></div> <div class="reco-bgm-left-box" data-v-b1d3339e data-v-41bcba48 data-v-b1d3339e><i class="reco-bgm reco-bgm-left" data-v-b1d3339e></i></div></div></div><!----></div></div>
+    <script src="/assets/js/app.8c8f8633.js" defer></script><script src="/assets/js/8.08618cb1.js" defer></script><script src="/assets/js/1.abb8de29.js" defer></script><script src="/assets/js/35.d31f0c30.js" defer></script><script src="/assets/js/39.76dd4810.js" defer></script>
+  </body>
+</html>
